@@ -28,7 +28,7 @@ body {
     to right bottom,
     rgba(64, 64, 64, 0.8), 
     rgba(0, 0, 0, 0.8)), 
-    url(../img/header.JPG); 
+    url(../img/header-background.JPG); 
   background-size: cover;
   background-position: top;
 
@@ -45,6 +45,8 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+
+  backface-visibility: hidden;
 }
 
 .heading-primary-main {
@@ -54,7 +56,8 @@ body {
   letter-spacing: 35px;
 
   animation-name: moveInLeft;
-  animation-duration: 3s;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 
 .heading-primary-sub {
@@ -64,6 +67,10 @@ body {
   letter-spacing: 15px;
   text-align: right;
   margin-right: 25px;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 
 @keyframes moveInLeft {
@@ -73,7 +80,7 @@ body {
   }
 
   80% {
-
+    transform: translateX(10px);
   }
 
   100% {
