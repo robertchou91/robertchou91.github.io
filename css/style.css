@@ -28,11 +28,18 @@ body {
     to right bottom,
     rgba(64, 64, 64, 0.8), 
     rgba(0, 0, 0, 0.8)), 
-    url(../img/IMG_0846.JPG); 
+    url(../img/header.JPG); 
   background-size: cover;
   background-position: top;
 
 
+}
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-5%, -75%);
 }
 
 .heading-primary {
@@ -45,6 +52,7 @@ body {
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 35px;
+  /* text-align: right; */
 }
 
 .heading-primary-sub {
@@ -52,4 +60,5 @@ body {
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 15px;
+  text-align: right;
 }
