@@ -40,7 +40,6 @@ body {
   top: 50%;
   left: 30%;
   transform: translate(0%, -50%);
-  /* text-align: center; */
 }
 
 .heading-primary {
@@ -90,6 +89,18 @@ body {
   }
 }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -115,4 +126,9 @@ body {
 .btn-white {
   background-color: #fff;
   color: #777;
+}
+
+.btn-animated {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards;
 }
