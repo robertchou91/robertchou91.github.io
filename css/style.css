@@ -63,3 +63,17 @@ body {
   text-align: right;
   margin-right: 25px;
 }
+
+@keyframes moveInLeft {
+  0% {
+
+  }
+
+  80% {
+    
+  }
+
+  100% {
+
+  }
+}
