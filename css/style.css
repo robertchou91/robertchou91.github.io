@@ -37,9 +37,10 @@ body {
 
 .text-box {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 30%;
   transform: translate(0%, -50%);
+  /* text-align: center; */
 }
 
 .heading-primary {
@@ -95,10 +96,23 @@ body {
   text-decoration: none;
   padding: 15px 40px;
   display: inline-block;
+  margin-left: 150px;
+  margin-top: 100px;
+  border-radius: 100px;
+  transition: all .2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
 
 .btn-white {
   background-color: #fff;
   color: #777;
-
 }
