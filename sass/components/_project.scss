@@ -1,0 +1,32 @@
+.project {
+  position: relative;
+  &__project {
+    // background-color: orangered;
+    height: 50rem;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 10rem;
+    backface-visibility: hidden;
+    transition: all 2s ease-out;
+
+    &--icon {
+      background-color: $color-black;
+    }
+
+    &--technologies {
+      z-index: -1;
+      opacity: 0;
+      background-color: green;
+    }
+  }
+
+  &:hover &__project--technologies {
+    z-index: 2;
+    opacity: 1;
+  }
+
+  &:hover &__project-icon {
+  }
+}
