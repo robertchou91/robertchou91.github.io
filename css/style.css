@@ -58,6 +58,20 @@ body {
     margin-right: 3rem;
     animation: moveInLeft 1s ease-out; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 5rem;
+  background-image: linear-gradient(to right, #404040, #000000);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: scale(2); }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -122,3 +136,7 @@ body {
     width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+.section-projects {
+  background-color: #f7f7f7;
+  padding: 0 0 25rem 0; }
