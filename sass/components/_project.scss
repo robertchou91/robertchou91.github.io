@@ -1,53 +1,70 @@
 .project {
-  // perspective: 150rem;
-  // -moz-perspective: 150rem;
-  // position: relative;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
   height: 50rem;
 
   &__project {
     // background-color: orangered;
     height: 50rem;
-    // position:absolute;
-    // top: 0;
-    // left: 0;
+    position:absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     border-radius: 10rem;
     backface-visibility: hidden;
     transition: all 1s ease;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &--icon {
       background-color: $color-black;
       text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      // display: flex;
+      vertical-align: middle;
+      width: 50rem;
+      // align-items: center;
+      // justify-content: center;
+      z-index: 1;
     }
 
     &--technologies {
-      // z-index: 2;
+      // display: block;
+      background-color: rgba($color-black, 0.8);
+      text-align: center;
+      color: #fff;
+      z-index: -1;
+      width: 50rem;
       // opacity: 0;
       // background-color: green;
+      .h1 {
+        opacity: 1.2;
+      }
     }
   }
 
   // &:hover &__project--technologies {
   // }
 
-  // &:hover &__project-icon {
-  // }
+  &:hover &__project--icon {
+    z-index: -2;
+
+  }
 }
 
 .goldenguardian {
   width: 50%;
-  display: block;
 }
 
 .burgerbuilder {
   width: 50%;
+
 }
 
 .testing {
-  display:block;
-  width: 100%;
+  // display:block;
+  // width: 100%;
+  // display:none;
+  color: #fff;
 }
