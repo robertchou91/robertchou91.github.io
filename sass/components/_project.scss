@@ -30,17 +30,13 @@
     }
 
     &--technologies {
-      // display: block;
+      display: block;
       background-color: rgba($color-black, 0.8);
       text-align: center;
       color: #fff;
       z-index: -1;
       width: 50rem;
-      // opacity: 0;
-      // background-color: green;
-      .h1 {
-        opacity: 1.2;
-      }
+      vertical-align: middle;
     }
   }
 

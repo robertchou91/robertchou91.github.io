@@ -153,13 +153,13 @@ body {
       width: 50rem;
       z-index: 1; }
     .project__project--technologies {
+      display: block;
       background-color: rgba(0, 0, 0, 0.8);
       text-align: center;
       color: #fff;
       z-index: -1;
-      width: 50rem; }
-      .project__project--technologies .h1 {
-        opacity: 1.2; }
+      width: 50rem;
+      vertical-align: middle; }
   .project:hover .project__project--icon {
     transform: scale(1.05);
     z-index: -2; }
