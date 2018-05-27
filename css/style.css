@@ -29,6 +29,20 @@ body {
     opacity: 1;
     transform: translateY(0); } }
 
+@keyframes moveinFront {
+  0% {
+    opacity: 1;
+    z-index: 1; }
+  33.33% {
+    opacity: 1;
+    z-index: 0; }
+  66.66% {
+    opacity: 1;
+    z-index: -1; }
+  100% {
+    opacity: 1;
+    z-index: -2; } }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -128,7 +142,7 @@ body {
     width: 100%;
     border-radius: 10rem;
     backface-visibility: hidden;
-    transition: all 1s ease;
+    transition: all .2s;
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -147,7 +161,10 @@ body {
       .project__project--technologies .h1 {
         opacity: 1.2; }
   .project:hover .project__project--icon {
+    transform: scale(1.05);
     z-index: -2; }
+    .project:hover .project__project--icon img {
+      transform: scale(1.15); }
 
 .goldenguardian {
   width: 50%; }
