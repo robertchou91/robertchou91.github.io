@@ -158,8 +158,12 @@ body {
       text-align: center;
       color: #fff;
       z-index: -1;
-      width: 50rem;
-      vertical-align: middle; }
+      width: 50rem; }
+      .project__project--technologies .information {
+        margin-top: 8rem; }
+        .project__project--technologies .information .title {
+          margin-bottom: 8rem;
+          font-size: 3rem; }
   .project:hover .project__project--icon {
     transform: scale(1.05);
     z-index: -2; }
@@ -171,9 +175,6 @@ body {
 
 .burgerbuilder {
   width: 50%; }
-
-.testing {
-  color: #fff; }
 
 .row {
   max-width: 114rem;
@@ -187,19 +188,19 @@ body {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
+      margin-right: 11rem; }
   .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2); }
+    width: calc((100% - 11rem) / 2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 6rem) / 3); }
+    width: calc((100% - 2 * 11rem) / 3); }
   .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+    width: calc(2 * ((100% - 2 * 11rem) / 3) + 11rem); }
   .row .col-1-of-4 {
-    width: calc((100% - 3 * 6rem) / 4); }
+    width: calc((100% - 3 * 11rem) / 4); }
   .row .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+    width: calc(2 * ((100% - 3 * 11rem) / 4) + 11rem); }
   .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+    width: calc(3 * ((100% - 3 * 11rem) / 4) + 2 * 11rem); }
 
 .section-projects {
   background-color: #f7f7f7;

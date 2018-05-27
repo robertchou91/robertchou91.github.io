@@ -5,7 +5,6 @@
   height: 50rem;
 
   &__project {
-    // background-color: orangered;
     height: 50rem;
     position:absolute;
     top: 0;
@@ -30,13 +29,20 @@
     }
 
     &--technologies {
-      display: block;
+      display: block;;
       background-color: rgba($color-black, 0.8);
       text-align: center;
-      color: #fff;
+      color: $color-white;
       z-index: -1;
       width: 50rem;
-      vertical-align: middle;
+
+      .information {
+        margin-top: 8rem;
+        .title {
+          margin-bottom: 8rem;
+          font-size: 3rem;
+        }
+      }
     }
   }
 
@@ -59,12 +65,5 @@
 
 .burgerbuilder {
   width: 50%;
-
 }
 
-.testing {
-  // display:block;
-  // width: 100%;
-  // display:none;
-  color: #fff;
-}
