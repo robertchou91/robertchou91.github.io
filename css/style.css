@@ -239,7 +239,10 @@ body {
   margin-right: 10rem; }
 
 .email img {
-  width: 10rem; }
+  width: 10rem;
+  transition: all .2s; }
+  .email img:hover {
+    transform: scale(1.25); }
 
 .facebook {
   display: inline-block;
