@@ -3,14 +3,33 @@
 }
 
 .skills-title {
-  display: block;
+  display: inline-block;
   color: $color-white;
 }
 
 .skills-icon-title {
   display: inline-block;
   color: $color-white;
-  &.img {
-    width: 10%;
-  }
+  width: 13rem;
+}
+
+.skills-icon-1 {
+  margin-bottom: 5rem;
+}
+
+.skills-icon {
+  width: 10rem;
+}
+
+.skills-icon-react {
+  width: 8rem;
+}
+
+.skills-icon-express {
+  width: 10rem;
+}
+
+.p {
+  width: 20px;
+  display: inline-block;
 }

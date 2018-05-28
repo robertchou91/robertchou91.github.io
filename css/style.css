@@ -195,14 +195,29 @@ body {
   text-align: center; }
 
 .skills-title {
-  display: block;
+  display: inline-block;
   color: #fff; }
 
 .skills-icon-title {
   display: inline-block;
-  color: #fff; }
-  .skills-icon-title.img {
-    width: 10%; }
+  color: #fff;
+  width: 13rem; }
+
+.skills-icon-1 {
+  margin-bottom: 5rem; }
+
+.skills-icon {
+  width: 10rem; }
+
+.skills-icon-react {
+  width: 8rem; }
+
+.skills-icon-express {
+  width: 10rem; }
+
+.p {
+  width: 20px;
+  display: inline-block; }
 
 .row {
   max-width: 114rem;
@@ -235,6 +250,6 @@ body {
   padding: 0 0 20rem 0; }
 
 .section-skills {
-  padding: 0 0 40rem 0;
+  padding: 0 0 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(64, 64, 64, 0.8), rgba(0, 0, 0, 0.8)), url(../img/IMG_0443.JPG);
   background-size: cover; }
