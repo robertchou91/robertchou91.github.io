@@ -1,0 +1,16 @@
+.skills {
+  text-align: center;
+}
+
+.skills-title {
+  display: block;
+  color: $color-white;
+}
+
+.skills-icon-title {
+  display: inline-block;
+  color: $color-white;
+  &.img {
+    width: 10%;
+  }
+}
