@@ -20,11 +20,8 @@
     &--icon {
       background-color: $color-black;
       text-align: center;
-      // display: flex;
       vertical-align: middle;
       width: 50rem;
-      // align-items: center;
-      // justify-content: center;
       z-index: 1;
     }
 
@@ -41,13 +38,11 @@
         .title {
           margin-bottom: 8rem;
           font-size: 3rem;
+          text-transform: uppercase;
         }
       }
     }
   }
-
-  // &:hover &__project--technologies {
-  // }
 
   &:hover &__project--icon {
     img {
