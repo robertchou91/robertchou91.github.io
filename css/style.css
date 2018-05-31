@@ -255,12 +255,24 @@ body {
   width: 10rem; }
 
 .linkedin {
+  margin-right: 10rem; }
+
+.linkedin {
   display: inline-block;
   transition: all .2s; }
   .linkedin:hover {
     transform: scale(1.25); }
 
 .linkedin img {
+  width: 10rem; }
+
+.github {
+  display: inline-block;
+  transition: all .2s; }
+  .github:hover {
+    transform: scale(1.25); }
+
+.github img {
   width: 10rem; }
 
 .row {
