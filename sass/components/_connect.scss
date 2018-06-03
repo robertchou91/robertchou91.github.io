@@ -3,7 +3,9 @@
 }
 
 .email {
-  margin-right: 10rem;
+  display: block;
+  // margin-right: 10rem;
+  margin-bottom: 2rem;
 }
 
 .email img {
@@ -16,8 +18,9 @@
 }
 
 .facebook {
-  display: inline-block;
-  margin-right: 10rem;
+  display: block;
+  // margin-right: 10rem;
+  margin-bottom: 2rem;
   transition: all .2s;
 
   &:hover {
@@ -26,16 +29,16 @@
 }
 
 .facebook img{
-  // display: inline-block;
   width: 10rem;
 }
 
 .linkedin {
-  margin-right: 10rem;
+  // margin-right: 10rem;
+  margin-bottom: 2rem;
 }
 
 .linkedin {
-  display: inline-block;
+  display: block;
   transition: all .2s;
 
   &:hover {
@@ -48,7 +51,7 @@
 }
 
 .github {
-  display: inline-block;
+  display: block;
   transition: all .2s;
 
   &:hover {
@@ -58,4 +61,68 @@
 
 .github img {
   width: 10rem;
+}
+
+@media (min-width: 500px) {
+  .medias {
+    text-align: center;
+  }
+  
+  .email {
+    display: inline-block;
+    margin-right: 10rem;
+  }
+  
+  .email img {
+    width: 10rem;
+    transition: all .2s;
+  
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+  
+  .facebook {
+    display: inline-block;
+    margin-right: 10rem;
+    transition: all .2s;
+  
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+  
+  .facebook img{
+    width: 10rem;
+  }
+  
+  .linkedin {
+    margin-right: 10rem;
+  }
+  
+  .linkedin {
+    display: inline-block;
+    transition: all .2s;
+  
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+  
+  .linkedin img {
+    width: 10rem;
+  }
+  
+  .github {
+    display: inline-block;
+    transition: all .2s;
+  
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+  
+  .github img {
+    width: 10rem;
+  }
 }
