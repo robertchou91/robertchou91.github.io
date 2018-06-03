@@ -11,44 +11,91 @@ body {
   color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
+  margin-bottom: 6rem;
 
   &--main {
     display: block;
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: 400;
-    letter-spacing: 3.5rem;
-    width: 880px;
+    letter-spacing: 1.5rem;
     animation: moveInLeft 1s ease-out;
-    margin-left: 300px;
   }
   
   &--sub {
     display: block;
     font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: 1.5rem;
-    text-align: right;
-    margin-right: 3rem;
-    animation: moveInLeft 1s ease-out;
+    font-weight:  700;
+    letter-spacing: .75rem;
+    animation: moveInRight 1s ease-out;
+  }
+}
+
+
+@media (min-width: 500px) {
+  
+  .heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+
+    &--main {
+      display: block;
+      font-size: 7rem;
+      font-weight: 400;
+      letter-spacing: 3.5rem;
+      width: 88rem;
+      animation: moveInLeft 1s ease-out;
+      margin-left: 30rem;
+    }
+    
+    &--sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 1.5rem;
+      text-align: right;
+      margin-right: 3rem;
+      animation: moveInLeft 1s ease-out;
+    }
+  }
+
+  .heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 7rem;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: all .2s;
+  
+    &:hover {
+      transform: scale(2);
+    }
   }
 }
 
 .heading-secondary {
   font-size: 3.5rem;
-  text-transform: uppercase;
+  text-transform:  uppercase;
   font-weight: 700;
   display: inline-block;
-  margin-top: 7rem;
   background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: 2px;
+  letter-spacing: .2rem;
   transition: all .2s;
 
   &:hover {
-    transform: scale(2);
+    // transform: skewY(2deg) skewX(15deg) scale(1.1);
+    // text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
   }
 }
+
+
+
 
 .heading-tertiary {
   font-size: 3.5rem;

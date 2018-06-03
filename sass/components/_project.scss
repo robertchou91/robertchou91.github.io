@@ -1,14 +1,10 @@
 .project {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  position: relative;
-  height: 50rem;
+  height: 25rem;
 
   &__project {
     height: 50rem;
-    position:absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     border-radius: 10rem;
     backface-visibility: hidden;
@@ -21,17 +17,13 @@
       background-color: $color-black;
       text-align: center;
       vertical-align: middle;
-      width: 50rem;
+      width: 20rem;
+      height: 20rem;
       z-index: 1;
     }
 
     &--technologies {
-      display: block;;
-      background-color: rgba($color-black, 0.8);
-      text-align: center;
-      color: $color-white;
-      z-index: -1;
-      width: 50rem;
+      display: none;
 
       .information {
         margin-top: 8rem;
@@ -62,3 +54,60 @@
   width: 50%;
 }
 
+@media (min-width: 500px) {
+  .project {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 50rem;
+  
+    &__project {
+      height: 50rem;
+      position:absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-radius: 10rem;
+      backface-visibility: hidden;
+      transition: all .2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      &--icon {
+        background-color: $color-black;
+        text-align: center;
+        vertical-align: middle;
+        width: 50rem;
+        z-index: 1;
+      }
+  
+      &--technologies {
+        display: block;
+        background-color: rgba($color-black, 0.8);
+        text-align: center;
+        color: $color-white;
+        z-index: -1;
+        width: 50rem;
+  
+        .information {
+          margin-top: 8rem;
+          .title {
+            margin-bottom: 8rem;
+            font-size: 3rem;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  
+    &:hover &__project--icon {
+      img {
+        transform: scale(1.15);
+      }
+      transform: scale(1.05);
+      z-index: -2;
+  
+    }
+  }
+}
