@@ -48,11 +48,11 @@
 }
 
 .goldenguardian {
-  width: 50%;
+  width: 150px;
 }
 
 .burgerbuilder {
-  width: 50%;
+  width: 150px;
 }
 
 @media (min-width: 500px) {
@@ -110,5 +110,12 @@
       z-index: -2;
   
     }
+  }
+  .goldenguardian {
+    width: 50%;
+  }
+  
+  .burgerbuilder {
+    width: 50%;
   }
 }

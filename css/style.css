@@ -79,7 +79,40 @@ body {
     letter-spacing: .75rem;
     animation: moveInRight 1s ease-out; }
 
-@media (min-width: 500px) {
+@media (min-width: 767px) {
+  .heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden; }
+    .heading-primary--main {
+      display: block;
+      font-size: 7rem;
+      font-weight: 400;
+      letter-spacing: 3.5rem;
+      width: 88rem;
+      animation: moveInLeft 1s ease-out;
+      margin-left: 30rem; }
+    .heading-primary--sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 1.5rem;
+      text-align: right;
+      margin-right: 3rem;
+      animation: moveInLeft 1s ease-out; }
+  .heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 7rem;
+    background-image: linear-gradient(to right, #404040, #000000);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: all .2s; } }
+
+@media (min-width: 1025px) {
   .heading-primary {
     color: #fff;
     text-transform: uppercase;
@@ -226,10 +259,10 @@ body {
       transform: scale(1.15); }
 
 .goldenguardian {
-  width: 50%; }
+  width: 150px; }
 
 .burgerbuilder {
-  width: 50%; }
+  width: 150px; }
 
 @media (min-width: 500px) {
   .project {
@@ -272,7 +305,11 @@ body {
       transform: scale(1.05);
       z-index: -2; }
       .project:hover .project__project--icon img {
-        transform: scale(1.15); } }
+        transform: scale(1.15); }
+  .goldenguardian {
+    width: 50%; }
+  .burgerbuilder {
+    width: 50%; } }
 
 .skills {
   text-align: center; }
