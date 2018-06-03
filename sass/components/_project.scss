@@ -55,7 +55,59 @@
   width: 150px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 767px) {
+  .project {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 30rem;
+  
+    &__project {
+      height: 50rem;
+      position:absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-radius: 10rem;
+      backface-visibility: hidden;
+      transition: all .2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      &--icon {
+        background-color: $color-black;
+        text-align: center;
+        vertical-align: middle;
+        height: 30rem;
+        width: 30rem;
+        z-index: 1;
+      }
+  
+      &--technologies {
+        display: none;
+      }
+    }
+  
+    &:hover &__project--icon {
+      img {
+        transform: scale(1.15);
+      }
+      transform: scale(1.05);
+      z-index: -2;
+  
+    }
+  }
+  .goldenguardian {
+    width: 40%;
+  }
+  
+  .burgerbuilder {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1025px) {
   .project {
     perspective: 150rem;
     -moz-perspective: 150rem;
